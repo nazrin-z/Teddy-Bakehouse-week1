@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Lugrasimo&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('..\assets\Demo_Fonts\Fontspring-DEMO-aftika-black.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .clip-left-half {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  
+  .clip-right-half {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  }
+  
