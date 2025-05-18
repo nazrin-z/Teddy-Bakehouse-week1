@@ -1,31 +1,44 @@
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/Logo.png';
+
 const Navbar = () => {
   return (
-    <div>
-      <div className="bg-ffffff h-22 fixed flex w-full z-50" > 
-        <a href='#'>
-          <img src={Logo} alt='logo' className='h-20 w-25 ml-10 mt-1'></img>
-        </a> 
-        <div className='flex justify-center items-center py-8 absolute top-0 left-0 w-full z-10'>
-   
-        <ul className='flex-1 flex justify-center max-lg:hidden gap-10 ml-40 font-serif text-a78577 font-extrabold '>
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="flex items-center justify-between h-20">
+          
+          {/* Logo on the left */}
+          <div className="flex-shrink-0">
+            <a href="#">
+              <img src={Logo} alt="Logo" className="h-16 w-auto" />
+            </a>
+          </div>
 
-          <li className='hover:text-eba1a2'>ORDER</li>
-          <li className='hover:text-eba1a2'>PRODUCTS</li>
-          <li className='hover:text-eba1a2'>HOURS & LOCATIONS</li>
-          <li className='hover:text-eba1a2'>ABOUT US</li>
-        </ul>
-        <div className='flex justify-end mr-20 gap-4 '>
-        <i class='bx bxs-search-alt-2'></i>
-        <i class='bx bxs-user'></i>
-        <i class='bx bxs-cart-alt'></i>
-        
-      </div>
-    
+          {/* Center navigation links */}
+          <ul className="hidden md:flex flex-1 justify-center space-x-10 font-semibold text-black font-serif text-base lg:text-lg">
+            <li className="hover:text-green-200 cursor-pointer">ORDER</li>
+            <li className="hover:text-green-200 cursor-pointer">PRODUCTS</li>
+            <li className="hover:text-green-200 cursor-pointer">HOURS & LOCATIONS</li>
+            <li className="hover:text-green-200 cursor-pointer">ABOUT US</li>
+          </ul>
+
+          {/* Right icons */}
+          <div className="hidden md:flex items-center space-x-6 text-xl text-[#281612]">
+            <i className="bx bxs-search-alt-2 cursor-pointer"></i>
+            <i className="bx bxs-user cursor-pointer"></i>
+            <i className="bx bxs-cart-alt cursor-pointer"></i>
+          </div>
+
+          {/* Mobile hamburger (optional) */}
+          <div className="md:hidden flex items-center">
+            <button className="text-2xl">
+              <i className="bx bx-menu"></i>
+            </button>
+          </div>
+
         </div>
       </div>
-    </div>
-  )
-}
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

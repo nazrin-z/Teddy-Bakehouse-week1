@@ -1,14 +1,13 @@
-import Orderpage from "../assets/Orderpage.png";
-import H from"../assets/H.png";
-
-const orderpage = () => {
+const OrderPage = () => {
   return (
-    <div className=" flex justify-center h-[250px] bg-scroll" >
-      <div>
-        <img src={Orderpage} alt="orderpage" className="w-full h-[500px] object-cover mt-28 ml-48 " />
-      </div>
-    </div>
-  )
-}
+    <div className="w-full h-screen bg-og bg-cover bg-center bg-no-repeat">
+<div>
+  <h1 className="text-red-500">This Month's Pudding: Peanut Butter Chocolate Banana Pudding</h1>
+</div>
 
-export default orderpage
+  </div>
+  
+  );
+};
+
+export default OrderPage;
