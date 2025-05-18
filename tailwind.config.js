@@ -7,25 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'edeae4': '#edeae4',
-        '2c1c25': '#2c1c25',
-        'eba1a2': '#eba1a2',
-        'a78577': '#a78577',
-        'ffcbcd': '#ffcbcd',
-        'dcd3e8': '#dcd3e8',
-        'ffe4fb': '#ffe4fb',
-        'ffe3f0': '#ffe3f0',
-        'd7d3d2': '#d7d3d2',
-        'ffffff': '#ffffff',
-        'ffe5ec': '#ffe5ec',
-        'e7d7d9': '#e7d7d9',
+        'Button': '#581b28',
       },
       fontFamily: {
-        'fancy': ['"Ribeye", serif'],
-        'myfont': ['MyFont', 'sans-serif'],
+        'fancy': ['Berkshire Swash', 'serif'],
+        'myfont': ["Modern Antiqua", 'serif'],
       },
       backgroundImage: {
         'og': "url('/src/assets/Orderpage.png')",
+        'bg': "url('/src/assets/bg.jpg')",
       },
     },
   },

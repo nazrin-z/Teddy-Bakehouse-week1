@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Oswald:wght@200..700&family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel+Decorative:wght@400;700;900&family=Modern+Antiqua&family=Oswald:wght@200..700&family=Paprika&family=Tagesschrift&display=swap');
+
+
 
 @tailwind base;
 @tailwind components;
